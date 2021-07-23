@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#ffffff"
+    tools:context="pep.com.environmentalprotection.addsightings">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/ivAnimal"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/btnRotate"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rotate2"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+
+
+            <Button
+                android:id="@+id/btnRotate1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rotate3"
+                android:layout_marginTop="26dp"
+                android:layout_below="@+id/btnRotate"
+                android:layout_alignStart="@+id/btnRotate" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GPS Location:(Current Location) " />
+
+        <EditText
+            android:id="@+id/etLocation"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/textbg"
+            android:ems="10"
+            android:layout_marginBottom="5dp"
+            android:inputType="textPersonName"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="General Name: " />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/textbg"
+            android:ems="10"
+            android:layout_marginBottom="5dp"
+            android:inputType="textPersonName"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/txtSpecies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Species: " />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+        <TextView
+            android:id="@+id/txtHabitat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Habitat: " />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:id="@+id/txtdescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description: " />
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:id="@+id/txtaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address: " />
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:background="#13420a"
+            android:text="Save"
+            android:textColor="#ffff" />
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

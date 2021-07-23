@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/addnews"
+        android:title="Add"
+        android:icon="@drawable/profile"/>
+    <item android:id="@+id/allnews"
+        android:title="All Bulletins"
+        android:icon="@drawable/contents"/>
+    <item android:id="@+id/yournews"
+        android:title="My Bulletins"
+        android:icon="@drawable/contents"/>
+
+    <item android:id="@+id/mycomments"
+        android:title="My Comments"
+        android:icon="@drawable/logout"/>
+
+</menu>

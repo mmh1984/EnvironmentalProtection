@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pep.com.environmentalprotection.addbulletin"
+    android:padding="5dp"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#4c6a44"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+            android:text="Post a Bulletin"
+            android:textSize="20sp" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_margin="10dp"
+            android:background="#aeaeae"
+            ></View>
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:maxLines="2"
+            android:background="#ffffff"
+            android:hint="Title"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/etContents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:hint="Contents"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLines="10"
+            android:padding="5dp"
+            android:lines="8"
+            android:singleLine="false" />
+
+        <Button
+            android:id="@+id/btnPost"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:background="#13420a"
+            android:text="Post"
+            android:textColor="#ffff"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

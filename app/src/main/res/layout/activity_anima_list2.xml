@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pep.com.environmentalprotection.AnimaList"
+    android:background="#ffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/anim1"
+                android:layout_margin="5dp"
+              />
+
+            <TextView
+                android:id="@+id/etListAddedBY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="#aeaeae"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="109dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/etListName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etListAddedBY"
+
+                android:layout_toEndOf="@+id/imageView3"
+                android:text="TextView"
+                android:textColor="#055e07"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/etListHabitat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/etlistdate"
+                android:layout_alignStart="@+id/etlistdate"
+                android:text="Habitat"
+                android:textColor="#aeaeae"
+                tools:layout_editor_absoluteX="163dp"
+                tools:layout_editor_absoluteY="84dp" />
+
+            <TextView
+                android:id="@+id/etlistdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView3"
+                android:layout_alignStart="@+id/etListName"
+                android:text="date"
+                android:textColor="#aeaeae"
+                tools:layout_editor_absoluteX="274dp"
+                tools:layout_editor_absoluteY="109dp" />
+
+            <TextView
+                android:id="@+id/etlistSpecies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/etListName"
+                android:layout_below="@+id/etListName"
+
+                android:text="Species"
+                android:textColor="#aeaeae"
+                tools:layout_editor_absoluteX="163dp"
+                tools:layout_editor_absoluteY="58dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+
+                <Button
+                    android:id="@+id/btnPreview"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:background="#a01d06"
+                    android:text="Preview"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"
+                    android:layout_margin="10dp"/>
+
+                <Button
+                    android:id="@+id/btnDeleteSightings"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:background="#a01d06"
+                    android:text="Delete"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"
+                    android:layout_margin="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

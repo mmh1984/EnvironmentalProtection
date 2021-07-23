@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pep.com.environmentalprotection">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <permission
+        android:name="pep.com.environmentalprotection.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.google.android.providers.gsf.permissions.READ_GSERVICES" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".Login"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginDialog"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Register"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".EnviromentRecord"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".addsightings"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".AnimaList" />
+        <activity android:name=".Map" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDDzBzoeiu2xXD_l_7zcQ9iJJw9d0nkINo" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".dialoganimals"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".Bulletin" />
+        <activity android:name=".addbulletin" />
+        <activity android:name=".NewsList" />
+        <activity android:name=".NewsContents" />
+        <activity android:name=".Comments" />
+        <activity android:name=".dialogcomments" />
+        <activity android:name=".MySightings" />
+        <activity android:name=".myComments" />
+        <activity android:name=".Contacts" />
+        <activity android:name=".Profile"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pep.com.environmentalprotection.NewsList">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+
+        android:layout_marginBottom="5dp"
+        android:background="#2C6700">
+
+        <TextView
+            android:id="@+id/tvNewsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="10dp"
+            android:text="TextView"
+            android:textColor="#FFCF79"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvNewsPosted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:text="TextView"
+            android:textColor="#E5E4D7"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvNewsDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:text="TextView"
+            android:textColor="#ffffff"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btnNewsRead"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:background="#92CD00"
+            android:text="View Article"
+            android:textColor="#ffffff"
+            android:textSize="10sp"
+         />
+    </LinearLayout>
+</RelativeLayout>
